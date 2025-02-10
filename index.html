@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/93d9fc9c96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body class="bg-rose-50">
+    <main class="ml-[70px]">
+        <h1 class="text-4xl font-bold mt-24">Desserts</h1>
+        <section class="grid grid-cols-5 gap-5 mt-[30px]">
+            <div>
+               <div class="relative " data-id= "1" data-name="Waffle with Berries" data-price= "6.50" data-image="/images/image-waffle-desktop.jpg">
+                   <img src="/images/image-waffle-desktop.jpg" alt="waffle" class="w-[250px] rounded imgs">
+                   <button class=" add-to-cart-btn flex bg-[#fcf9f7] rounded-2xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2"  data-id="1" data-name="Waffle with Berries" data-price="$6.50" data-image="/images/image-waffle-desktop.jpg">
+                        <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px] z">
+                        <p class="text-black text-sm ml-[5px] ">Add to Cart</p>
+                   </button>
+
+                   <div class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 " style="display: none;">
+                    <button class=" counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]" data-id="1">
+                        <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                    </button>
+                    <span class="proNum text-white text-sm ml-[20px]" data-id="1">1</span>
+                    <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]" data-id= "1">
+                        <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                    </button>
+                    </div>
+                </div>
+               <div class="mt-[20px]">
+                   <p class="text-xs opacity-50">Waffle</p>
+                   <h4>Waffle with Berries</h4>
+                   <p class="text-red-500 font-bold">$6.50</p>
+               </div>
+            </div>
+            <div>
+                <div class="relative" data-id= "2" data-name="Vanilla Bean Creme Brulee" data-price= "7.00" data-image="/images/image-creme-brulee-desktop.jpg">
+                    <img src="/images/image-creme-brulee-desktop.jpg" alt="creme" class="w-[250px] rounded imgs">
+                    <button class="add-to-cart-btn flex  bg-[#fcf9f7] rounded-2xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2"  data-id="2" data-name="Vanilla Bean Creme Brulee" data-price="$7.00" data-image="/images/image-creme-brulee-desktop.jpg">
+                         <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px]">
+                         <p class="text-black text-sm ml-[5px] ">Add to Cart</p>
+                    </button>
+
+                    <div class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 "  style="display: none;">
+                        <button class="counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]" data-id="2">
+                            <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                        </button>
+                        <span class="proNum text-white text-sm ml-[20px]"  data-id="2">1</span>
+                        <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]" data-id= "2">
+                            <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-[20px]">
+                    <p class="text-xs opacity-50">Creme Brulee</p>
+                    <h4>Vanilla Bean Creme Brulee</h4>
+                    <p class="text-red-500 font-bold">$7.00</p>
+                </div>
+            </div>
+            <div>
+                <div class="relative"  data-id= "3" data-name="Macaron Mix of Five" data-price= "8.00" data-image="/images/image-macaron-desktop.jpg">
+                    <img src="/images/image-macaron-desktop.jpg" alt="macaron" class="w-[250px] rounded imgs">
+                    <button class="add-to-cart-btn flex bg-[#fcf9f7] rounded-2xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2"  data-id="3" data-name="Macaron Mix of Five" data-price="$8.00" data-image="/images/image-macaron-desktop.jpg">
+                         <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px]">
+                         <p class="text-black text-sm ml-[5px]">Add to Cart</p>
+                    </button>
+
+                    <div  class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 " data-id= "3" style="display: none;"  >
+                        <button class="counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]" data-id="3">
+                            <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                        </button>
+                        <span class="proNum text-white text-sm ml-[20px]"  data-id="3">1</span>
+                        <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]" data-id= "3">
+                            <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-[20px]">
+                    <p class="text-xs opacity-50">Macaron</p>
+                    <h4>Macaron Mix of Five</h4>
+                    <p class="text-red-500 font-bold">$8.00</p>
+                </div>
+            </div>
+
+            <div class="col-span-2 bg-white ml-[10px] mr-[150px] rounded mt-[-50px] h-[270px]  " id="empty-cart">
+                <h4 class="text-red-600 text-2xl font-extrabold ml-[30px] mt-[10px]" >Your Cart(0)</h4>
+                <img src="/images/illustration-empty-cart.svg" alt="empty" class="w-[150px] ml-[80px] mt-[25px]">
+                <p class="ml-[50px] mt-[20px] text-amber-900">Your added items will appear here</p>
+            </div> 
+            <aside id="full-cart" class="col-span-2 bg-white ml-[10px] mr-[130px] rounded mt-[-50px]  hidden">
+                <h2 class="text-red-600 text-2xl font-extrabold ml-[30px] mt-[10px]" >Your Cart(<span id="cart-count">0</span>)</h2>
+                <ul id="cart-items" class="max-h-[200px] overflow-y-auto overflow-x-visible">
+
+                </ul>
+        
+                <div id="cart-summary" class="mt-[10px] mb-[10px]" >
+                    <p class="text-sm ml-[30px]">Order Total: <span class="float-right text-lg font-bold mr-[30px]" >$ <span span id="order-total" class="float-right text-lg font-bold mr-[30px]">0.00</span> </span></p>
+                    <div class="flex bg-slate-100  py-[10px] text-sm  rounded-xl ml-[60px] mt-[10px] mr-[65px] " >
+                        <img src="/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral" class="ml-[10px]">
+                        <p class="ml-[5px]">This is a <span>carbon-neutral</span>delivery</p>
+                    </div>
+                    <button id="confirm-order"
+                     class="bg-[#c73a0f] px-[70px] py-[8px] text-sm text-white rounded-3xl mt-[10px]  ml-[60px] mb-[20px]">
+                     Confirm Order
+                    </button>
+                </div>
+            </aside>
+
+        </section>
+        <section class="grid grid-cols-5 gap-5 mt-[30px]">
+             <div>
+                <div class="relative"  data-id= "4" data-name="Classic Tiramisu" data-price= "5.50" data-image="/images/image-tiramisu-desktop.jpg">
+                    <img src="/images/image-tiramisu-desktop.jpg" alt="tiramisu" class="w-[250px] rounded imgs">
+                    <button class="add-to-cart-btn flex bg-[#fcf9f7] rounded-2xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2" data-id="4" data-name="Classic Tiramisu" data-price="$5.50" data-image="/images/image-tiramisu-desktop.jpg">
+                         <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px]">
+                         <p class="text-black text-sm ml-[5px]">Add to Cart</p>
+                    </button>
+                    <div class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 "  style="display: none;">
+                        <button class="counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]" data-id="4">
+                            <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                        </button>
+                        <span class="proNum text-white text-sm ml-[20px]"  data-id="4">1</span>
+                        <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]" data-id="4">
+                            <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                        </button>
+                    </div>
+                 </div>
+                <div class="mt-[20px]">
+                    <p class="text-xs opacity-50">Tiramisu</p>
+                    <h4>Classic Tiramisu</h4>
+                    <p class="text-red-500 font-bold">$5.50</p>
+                </div>
+             </div>
+             <div>
+                <div class="relative"  data-id="5" data-name="Pistachio Baklava" data-price="4.00" data-image="/images/image-baklava-desktop.jpg">
+                    <img src="/images/image-baklava-desktop.jpg" alt="baklava" class="w-[250px] rounded imgs">
+                    <button class="add-to-cart-btn flex bg-[#fcf9f7] rounded-2xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2" data-id="5" data-name="Pistachio Baklava" data-price="$4.00" data-image="/images/image-baklava-desktop.jpg">
+                         <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px]">
+                         <p class="text-black text-sm ml-[5px]">Add to Cart</p>
+                    </button>
+                    <div class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 "  style="display: none;">
+                        <button class="counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]" data-id="5">
+                            <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                        </button>
+                        <span class="proNum text-white text-sm ml-[20px]"  data-id="5">1</span>
+                        <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]"data-id="5">
+                            <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-[20px]">
+                    <p class="text-xs opacity-50">Baklava</p>
+                    <h4>Pistachio Baklava</h4>
+                    <p class="text-red-500 font-bold">$4.00</p>
+                </div>
+             </div>
+             <div>
+                <div class="relative" data-id="6" data-name="Lemon Meringue Pie" data-price="5.00" data-image="/images/image-meringue-desktop.jpg">
+                    <img src="/images/image-meringue-desktop.jpg" alt="pie" class="w-[250px] rounded imgs">
+                    <button class="add-to-cart-btn flex bg-[#fcf9f7] rounded-2xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2" data-id="6" data-name="Lemon Meringue Pie" data-price="$5.00" data-image="/images/image-meringue-desktop.jpg">
+                         <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px]">
+                         <p class="text-black text-sm ml-[5px]">Add to Cart</p>
+                    </button>
+                    <div class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 " style="display: none;">
+                        <button class="counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]"  data-id="6">
+                            <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                        </button>
+                        <span class="proNum text-white text-sm ml-[20px]"  data-id="6">1</span>
+                        <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]" data-id="6">
+                            <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-[20px]">
+                    <p class="text-xs opacity-50">Pie</p>
+                    <h4>Lemon Meringue Pie</h4>
+                    <p class="text-red-500 font-bold">$5.00</p>
+                </div>
+             </div>
+        </section>
+        <section class="grid grid-cols-5 gap-5 mt-[30px] mb-[90px]">
+             <div>
+                <div class="relative" data-id="7" data-name="Red Velvet Cake" data-price="4.50" data-image="/images/image-cake-desktop.jpg">
+                    <img src="/images/image-cake-desktop.jpg" alt="cake" class="w-[250px] rounded imgs">
+                    <button class="add-to-cart-btn flex bg-[#fcf9f7] rounded-2xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2" data-id="7" data-name="Red Velvet Cake" data-price="$4.50" data-image="/images/image-cake-desktop.jpg">
+                         <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px]">
+                         <p class="text-black text-sm ml-[5px]">Add to Cart</p>
+                    </button>
+
+                    <div class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 "  style="display: none;">
+                        <button class="counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]" data-id="7">
+                            <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                        </button>
+                        <span class="proNum text-white text-sm ml-[20px]"  data-id="7">1</span>
+                        <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]" data-id="7">
+                            <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                        </button>
+                    </div>
+                 </div>
+                <div class="mt-[20px]">
+                    <p class="text-xs opacity-50">Cake</p>
+                    <h4>Red Velvet Cake</h4>
+                    <p class="text-red-500 font-bold">$4.50</p>
+                </div>
+             </div>
+             <div>
+                <div class="relative"  data-id="8" data-name="Salted Caramel Brownie" data-price="5.50" data-image="/images/image-brownie-desktop.jpg">
+                    <img src="/images/image-brownie-desktop.jpg" alt="brownie" class="w-[250px] rounded imgs">
+                    <button class="add-to-cart-btn flex bg-[#fcf9f7] rounded-3xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2"  data-id="8" data-name="Salted Caramel Brownie" data-price="$5.50" data-image="/images/image-brownie-desktop.jpg">
+                         <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px]">
+                         <p class="text-black text-sm ml-[5px]">Add to Cart</p>
+                    </button>
+                    <div class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 "  style="display: none;">
+                        <button class="counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]" data-id="8">
+                            <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                        </button>
+                        <span class="proNum text-white text-sm ml-[20px]"  data-id="8">1</span>
+                        <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]" data-id="8">
+                            <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                        </button>
+                    </div>
+                 </div>
+                <div class="mt-[20px]">
+                    <p class="text-xs opacity-50">Brownie</p>
+                    <h4>Salted Caramel Brownie</h4>
+                    <p class="text-red-500 font-bold">$5.50</p>
+                </div>
+             </div>
+             <div>
+                <div class="relative"  data-id="9" data-name="Vanilla Panna Cotta" data-price="6.50" data-image="/images/image-panna-cotta-desktop.jpg">
+                    <img src="/images/image-panna-cotta-desktop.jpg" alt="panna" class="w-[250px] rounded imgs">
+                    <button class="add-to-cart-btn flex bg-[#fcf9f7] rounded-2xl px-[20px] py-[7px] border-black border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2"  data-id="9" data-name="Vanilla Panna Cotta" data-price="$6.50" data-image="/images/image-panna-cotta-desktop.jpg">
+                         <img src="/images/icon-add-to-cart.svg" alt="cart" class="w-[15px] mt-[2px]">
+                         <p class="text-black text-sm ml-[5px]">Add to Cart</p>
+                    </button>
+                    <div class=" btn2 flex bg-[#c73a0f] rounded-2xl px-[20px] py-[7px] border-[#c73a0f] border-[1px] ml-[55px] absolute bottom-[-15px] transform-translate-x-1/2 " style="display: none;">
+                        <button class="counter-minus bg-[#c73a0f] px-[4px] py-[6px] rounded-3xl border-white border-2 mt-[1px]" data-id="9">
+                            <img src="/icon-decrement-quantity.svg" alt="minus" class="w-[6px] ">
+                        </button>
+                        <span class="proNum text-white text-sm ml-[20px]"  data-id="9">1</span>
+                        <button class="counter-plus bg-[#c73a0f] px-[3px] py-[3px] rounded-3xl border-white border-2 ml-[20px] mt-[2px]" data-id="9">
+                            <img src="/icon-increment-quantity.svg" alt="plus" class="w-[6px] ">
+                        </button>
+                    </div>
+                 </div>
+                <div class="mt-[20px]">
+                    <p class="text-xs opacity-50">Panna Cotta</p>
+                    <h4>Vanilla Panna Cotta</h4>
+                    <p class="text-red-500 font-bold">$6.50</p>
+                </div>
+             </div>
+        </section>
+        
+    </main>
+     
+    <main id="overlay" class="bg-black bg-opacity-50 z-40 inset-0 fixed hidden "></main>
+        <div class="bg-white w-[400px] rounded-lg ml-[500px] fixed inset-0  z-50  mt-[70px] h-[500px] hidden " id="confirm-tab">
+            <img src="/circle-check-regular (1).svg" alt="correct" class="w-[40px] ml-[25px] pt-[20px]">
+            <p class="text-3xl font-bold ml-[25px] mt-[25px]">Order Confirmed</p>
+            <p class="text-sm text-[#a8a1a1] ml-[25px]">We hope you enjoyed your food!</p>
+                <ul id="order-list" class="bg-[#e5e2e2] mr-[25px] rounded-md ml-[25px] mt-[7px] mb-[10px] max-h-[220px]  overflow-y-auto">
+                   
+                </ul>
+            <span class="flex justify-between bg-[#e5e2e2] ml-[25px] mr-[25px] px-[20px] py-[15px] rounded-md">
+                <p class=" text-sm text-[#7c7a7a] mt-[7px]">Order Total</p>
+                <p class="text-2xl font-bold">$<span id="order-total-price">0.00</span></p>
+            </span>
+            <button class="bg-[#c73a0f] px-[90px] py-[8px] text-sm text-white rounded-3xl mt-[10px]  ml-[60px] mb-[20px]" id="new-order">
+                Start New Order
+            </button>
+        </div>
+    
+    <script src="/index.js"></script>
+</body>
+</html>
